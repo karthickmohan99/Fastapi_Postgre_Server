@@ -1,6 +1,7 @@
 from config import Base
 from sqlalchemy import Column,Integer,String,Boolean,BigInteger
 
+#DataClass -->Base
 class Users(Base):
     __tablename__ ="users" #special variable
 

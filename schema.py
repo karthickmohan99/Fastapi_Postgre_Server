@@ -14,3 +14,12 @@ class UserList(BaseModel):
     name:str
     email:str
     status:bool
+
+    #convert sqlalchecmy model in to reponse based JSON 
+    class config():
+        from_attributes =True
+
+class LoginRequest(BaseModel):
+    password:str
+    email:str
+
